@@ -9,7 +9,7 @@ html {
 }
 
 
-nav {
+.navbar {
     background-color: #07689F;
     height: 40px;
     top: 0;
@@ -22,16 +22,17 @@ nav {
     align-items: center;
 }
 
-nav > a {
+.navbar > a {
     color: #FAFAFA;
     text-decoration: none;
     font-size: 20px;
     margin: 5px 10px;
 }
 
-nav > a:hover {
+.navbar > a:hover {
     color: #FF7E67;
     scale: 1.2;
+    transition: 100ms;
 
 }
 
@@ -70,4 +71,9 @@ nav > a:hover {
     font-size: 150px;
     padding: 10px;
     margin: 0;
+}
+
+.title:hover {
+    color: #FF7E67;
+    
 }
