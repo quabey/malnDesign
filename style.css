@@ -1,0 +1,49 @@
+/* #07689F
+#A2D5F2
+#FAFAFA
+#FF7E67 */
+
+
+
+nav {
+    background-color: #07689F;
+    height: 40px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav > a {
+    color: #FAFAFA;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 5px 10px;
+}
+
+.grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    
+}
+
+
+.grid > div {
+    background-color: #07689F;
+    border: 1px solid #A2D5F2;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.grid > div > h2 > a {
+    color: #FAFAFA;
+    text-decoration: none;
+}
