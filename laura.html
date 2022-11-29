@@ -3,6 +3,7 @@
 
 <head>
     <style>
+        
       .style1 {
     font-size: 2.5em;
    
@@ -38,20 +39,25 @@ a {
     color: dodgerblue;
 }
 
-.grid {
+.grid-p {
     display: grid;
     grid-template-columns: 20em 10em;
 }
 
 body {
     font-family: Arial;
-    background-color: rosybrown;
-    color: black
+    background-color: #A2D5F2;
+    color: black;
+    
 }  
+html{
+    scroll-behavior: smooth;
+}
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
     <title>Über mich</title>
 
@@ -59,7 +65,21 @@ body {
 
 
 <body>
-    <div class="container grid">
+    <nav class="navbar">
+        <a href="maik.html">
+            Maik
+        </a>
+        <a href="albert.html">
+            Albert
+        </a>
+        <a href="laura.html">
+            Laura
+        </a>
+        <a href="nils.html">
+            Nils
+        </a>
+    </nav>
+    <div class="container grid-p">
         <header>
             <div id="introduction">
                 <h1 class="style1"> Über mich</h1>
