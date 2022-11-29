@@ -3,6 +3,9 @@
 #FAFAFA
 #FF7E67 */
 
+html {
+    font-family: optima, sans-serif;
+}
 
 
 nav {
@@ -15,6 +18,7 @@ nav {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
+    align-items: center;
 }
 
 nav > a {
