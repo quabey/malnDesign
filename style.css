@@ -33,6 +33,9 @@ nav > a {
     
 }
 
+.bild {
+    background-color: none;  
+}
 
 .grid > div {
     background-color: #07689F;
@@ -43,7 +46,17 @@ nav > a {
     text-decoration: none;
 }
 
+
 .grid > div > h2 > a {
     color: #FAFAFA;
     text-decoration: none;
+}
+
+.title {
+    background-color: #FAFAFA;
+    ;
+    text-align: center;
+    font-size: 150px;
+    padding: 10px;
+    margin: 0;
 }
