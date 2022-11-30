@@ -4,18 +4,26 @@
 #FF7E67 */
 
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 html {
     font-family: 'JetBrains Mono', monospace;
     scroll-behavior: smooth;
+    background-color: #faebe8;
 }
 
 /* =============================================================================== */
 /* ================================== Navbar Stuff =============================== */
 /* =============================================================================== */
+.nav-box {
+    display: flex;
+    align-items: center;
+    place-content: center;
+}
+
 .navbar {
     background-color: #07689F;
-    height: 40px;
+    height: 60px;
     top: 0;
     left: 0;
     z-index: 100;
@@ -25,6 +33,7 @@ html {
     padding-right: 20px;
     align-items: center;
     border-radius: 1em;
+    
 }
 
 .navbar > a {
@@ -33,8 +42,6 @@ html {
     font-size: 20px;
     margin: 5px 10px;
 }
-
-
 
 .navbar > a:hover {
     color: #FF7E67;
@@ -106,7 +113,6 @@ html {
     background-position: 0 100%;
 }
 
-
 /* =============================================================================== */
 /* =================================== Cards Stuff =============================== */
 /* =============================================================================== */
@@ -117,6 +123,7 @@ html {
     align-items: center;
     text-decoration: none;
     margin-top: 20px;
+    width: auto;
 }
 .card {
     display: flex;
@@ -173,4 +180,13 @@ html {
 
 .card > div > h2:hover {
     background-position: 0 100%;
+}
+
+/* =============================================================================== */
+/* =================================== Footer Stuff ============================== */
+/* =============================================================================== */
+
+footer {
+    display: flex;
+    justify-content: center;
 }
