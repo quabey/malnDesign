@@ -123,7 +123,6 @@ html {
     align-items: center;
     text-decoration: none;
     margin-top: 20px;
-    width: auto;
 }
 .card {
     display: flex;
