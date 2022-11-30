@@ -10,45 +10,224 @@ html {
     font-family: 'JetBrains Mono', monospace;
     scroll-behavior: smooth;
     background-color: #faebe8;
+    width: 100vw;
 }
 
 /* =============================================================================== */
 /* ================================== Navbar Stuff =============================== */
 /* =============================================================================== */
 .nav-box {
+    /* Inhalt flex machen */
     display: flex;
+    /* Inhalt zentrieren */
     align-items: center;
+    /* Inhalt zentrieren */
     place-content: center;
 }
 
 .navbar {
+    /* Hintergrund blau machen */
     background-color: #07689F;
+    /* Höhe der Navbar auf 60px*/
     height: 60px;
-    top: 0;
-    left: 0;
-    z-index: 100;
+    /* Inhalt flex machen */
     display: flex;
+    /* Inhalt gleichmäßig verteilen */
     justify-content: space-between;
+    /* Paddng links und rechts einfügen */
     padding-left: 20px;
     padding-right: 20px;
+    /* Inhalt zentrieren */
     align-items: center;
+    /* Ecken runde machen */
     border-radius: 1em;
     
 }
 
 .navbar > a {
+    /* Text weiß machen */
     color: #FAFAFA;
+    /* Unterstriche entfernen */
     text-decoration: none;
+    /* Text größe auf 20px */
     font-size: 20px;
+    /* margin auf 5px 10px */
     margin: 5px 10px;
 }
 
 .navbar > a:hover {
+    /* Textfarbe bei Hover ändern */
     color: #FF7E67;
+    /* Text bei hover größer machen */
     scale: 1.1;
+    /* Übergangsdauer festlegen */
     transition: 200ms;
+    /* Fügt Unterstrich ein */
     text-decoration: underline 2px #FF7E67;
 
+}
+
+/* =============================================================================== */
+/* =================================== Title Stuff =============================== */
+/* =============================================================================== */
+.title{
+    /* Höhe auf 80% des Screens */
+    height: 80vh;
+    /* Text zentrienren */
+    text-align: center;
+    /* Text größe auf 150px */
+    font-size: 150px;
+    /* padding auf 10px */
+    padding: 10px;
+    /* Unterstrich mit Farbe einfügen */
+    text-decoration: underline #FF7E67; 
+    }
+.title-text {
+    /* ============== Transition / Animation Stuff ================ */
+    /* Hintergrund auf gradient mit zwei Verschiedenen Farben setzen, diese sind getrennt */
+    background: linear-gradient(to right, #FF7E67, #FF7E67 50%, black 50%);
+     /* Hintergrund auf Text beschränken */
+    background-clip: text;
+     /* Hintergrund auf Text beschränken */
+    -webkit-background-clip: text;
+    /* Textfarbe transparent setzen */
+    -webkit-text-fill-color: transparent;
+    /* Hintergrundgröße auf 200% 100% setzen */
+    background-size: 200% 100%;
+    /* Hintergrundposition auf 100% setzen */
+    background-position: 100%;
+    /* Transition auf 2000ms setzen mit ease atribute, damit es smooth aussieht*/
+    transition: background-position 2000ms ease;
+}
+
+    /* =============== Title Hover Effect ====================== */
+.title-text:hover {
+    /* Hintergrund Position beim Hovern ändern */
+    background-position: 0 100%;
+}
+
+/* =============================================================================== */
+/* =================================== Cards Stuff =============================== */
+/* =============================================================================== */
+
+.cards {
+    /* Inhalt flex machen */
+    display: flex;
+    /* Inhalt zentrieren */
+    justify-content: center;
+    /* Inhalt vertikal zentrieren */
+    align-items: center;
+    /* Unterstrich entfernen */
+    text-decoration: none;
+    /* Höhe auf 90% des Screens */
+    height: 90vh;
+}
+
+.card {
+    /* macht Inhalte flex */
+    display: flex;
+    /* Abstand zwischen Inhalten auf 3rem */
+    gap: 3rem;
+    /* Border auf 5 px mit Farbe und solid */
+    border: #07689F 5px solid;
+    /* Breit auf 80% */
+    width: 80%;
+    /* padding auf 10px */
+    padding: 10px;
+    /* Ecken abrunden mit 1rem */
+    border-radius: 1rem;
+    /* Unterstrich entfernen */
+    text-decoration: none;
+    /* Textfarbe schwarz */
+    color: black;
+}
+
+.card:hover {
+    /* Border auf 5px mit Farbe und solid */
+    border: #FF7E67 5px solid;
+    transition: 500ms ease;
+}
+
+.card > div {
+    /* macht Inhalte flex */
+    display: flex;
+    /* flex richtung spalte (horizontal) */
+    flex-direction: column;
+    /* Inhalt zentrien */
+    justify-content: center;
+    /* Inhalt zentrien */
+    align-items: center;
+    /* padding auf 10px */
+    padding: 10px;
+    /* Unterstrich entfernen */
+    text-decoration: none;
+    
+}
+
+.card > div > img {
+    /* Bild größe auf 100% setzten */
+    width: 100%;
+    height: 100%;
+    /* Ecken abrunden */
+    border-radius: 1rem;
+}
+
+.card > div > p {
+    /* Text größe auf 20px */
+    font-size: 20px;
+    /* Text links orientieren */
+    text-align: left;
+    /* Unterstrich entfernen */
+    text-decoration: none;
+}
+
+.card > div > h2 {
+    /* Schriftgröße auf 150px */
+    font-size: 150px;
+    /* Text zentrieren */
+    text-align: center;
+    /* margin auf 0 setzten */
+    margin: 0;
+     /* ========== Transition / Animation Stuff ========================*/
+    /* Hintergrund auf gradient mit zwei Verschiedenen Farben setzen, diese sind getrennt */
+     background: linear-gradient(to right, #FF7E67, #FF7E67 50%, black 50%);
+    /* Hintergrund auf Text beschränken */
+     background-clip: text;
+    /* Hintergrund auf Text beschränken */
+     -webkit-background-clip: text;
+    /* Textfarbe auf transparent setzen */
+     -webkit-text-fill-color: transparent;
+    /* Hintergrundgröße auf 200% 100% setzen */
+     background-size: 200% 100%;
+    /* Hintergrundposition auf 100% setzen */
+     background-position: 100%;
+    /* Transition auf 2000ms setzen mit ease atribute, damit es smooth aussieht*/
+     transition: background-position 2000ms ease;
+     /* Text unterstreichen */
+     text-decoration: underline #FF7E67;
+}
+
+.card > div > h2:hover {
+    /* Ändert die hintergrund Postion sobald der Title gehovert wird */
+    background-position: 0 100%;
+}
+
+/* =============================================================================== */
+/* =================================== Footer Stuff ============================== */
+/* =============================================================================== */
+
+footer {
+    /* macht inhalte flex */
+    display: flex;
+    /* zentriert den Inhalt */
+    justify-content: center;
+}
+
+footer > p > a {
+    /* Textfarbe Schwarz */
+    color: black;
+    /* Unterstrich entfernen */
+    text-decoration: none;
 }
 
 /* =============================================================================== */
@@ -82,110 +261,4 @@ html {
 .grid > div > h2 > a {
     color: #FAFAFA;
     text-decoration: none;
-}
-
-/* =============================================================================== */
-/* =================================== Title Stuff =============================== */
-/* =============================================================================== */
-.title{
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 150px;
-    padding: 10px;
-    text-decoration: underline #FF7E67; 
-    }
-.title-text {
-    /* Transition / Animation Stuff */
-    background: linear-gradient(to right, #FF7E67, #FF7E67 50%, black 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position 2000ms ease;
-}
-
-    /* Title Hover Effect */
-
-.title-text:hover {
-    background-position: 0 100%;
-}
-
-/* =============================================================================== */
-/* =================================== Cards Stuff =============================== */
-/* =============================================================================== */
-
-.cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    margin-top: 20px;
-}
-.card {
-    display: flex;
-    gap: 3rem;
-    border: #07689F 5px solid;
-    width: 80%;
-    padding: 10px;
-    border-radius: 1rem;
-    text-decoration: none;
-    color: black;
-}
-
-.card:hover {
-    border: #FF7E67 5px solid;
-    transition: 500ms ease;
-}
-
-.card > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    text-decoration: none;
-    
-}
-
-.card > div > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-}
-
-.card > div > p {
-    font-size: 20px;
-    text-align: left;
-    text-decoration: none;
-}
-
-.card > div > h2 {
-    font-size: 150px;
-    text-align: center;
-    margin: 0;
-     /* Transition / Animation Stuff */
-     background: linear-gradient(to right, #FF7E67, #FF7E67 50%, black 50%);
-     background-clip: text;
-     -webkit-background-clip: text;
-     -webkit-text-fill-color: transparent;
-     background-size: 200% 100%;
-     background-position: 100%;
-     transition: background-position 2000ms ease;
-     text-decoration: underline #FF7E67;
-}
-
-.card > div > h2:hover {
-    background-position: 0 100%;
-}
-
-/* =============================================================================== */
-/* =================================== Footer Stuff ============================== */
-/* =============================================================================== */
-
-footer {
-    display: flex;
-    justify-content: center;
 }
