@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 
+            #07689F
+            #A2D5F2
+            #FAFAFA
+            #FF7E67 
+        */
+        body{
+            background-color: #A2D5F2;
+            min-height: 100vh;
+        }
+        h3{
+            font-size: 40px;
+        }
+        h4{ 
+            font-size: 28px;
+        }
+        .title{
+            background-color: #A2D5F2;
+            height: 18vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+            .title > img{
+                width: 33%;
+            }
+        .left{
+            background-color: #fafafa98;
+            width: 20vw;
+            min-height: 70vh;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .right{
+            background-color: #fafafa98;
+            width: 20vw;
+            min-height: 70vh;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+            .center{
+                background-color: #fafafa31;
+                gap: 1rem;
+                width: 58vw;
+                min-height: 70vh;
+            }
+            img{
+                width: 8%;
+            }
+                .center-left{
+                    background-color: #fafafaa0;
+                    width: 33vw;
+                    border: none;
+                    min-height: 36vh;
+                }
+                .center-right{
+                    background-color: #fafafaa0;
+                    width: 33vw;
+                    border: none;
+                    min-height: 36vh;  
+                }
+        #ihk{
+            width: 15%
+        }
+        .bgpic{
+            background-image: url(images/bergtour_1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+    </style>
+    <title>Maik</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="maik.html">
+            Maik
+        </a>
+        <a href="albert.html">
+            Albert
+        </a>
+        <a href="laura.html">
+            Laura
+        </a>
+        <a href="nils.html">
+            Nils
+        </a>
+    </nav>
+    
+    <div class="title">
+        <h3 class="title-text">Herzlich Willkommen</h3>
+            <img src="/images/bergtour_1.jpg" alt="Bild">
+    </div>
+    <div class="cards bgpic">
+        <div class="card left">
+            <ul>
+                <h4><img src="images/hardskills.png" alt="Hardskills"> Hardskills</h4>
+                    <li>HTML: <sub>* * * *</sub></li>
+                    <li>CSS: <sub>* * *</sub></li>
+                    <li>Datenbanken: <sub>* * *</sub></li>
+                    <li>JavaScript: <sub>* *</sub></li>
+                    <li>PHP: <sub>* *</sub></li>
+                    <li>Java: <sub>* *</sub></li> 
+                </ul>
+            <ul>
+                <h4><img src="images/softskills.png" alt="Softskills"> Softskills</h4>    
+                    <li>Teamfähigkeit:  <sub>* * * *</sub></li>
+                    <li>Kommunikation: <sub>* * * *</sub></li>
+                    <li>Stressresistenz: <sub>* * * * *</sub></li>
+                    <li>Kreativität: <sub>* * *</sub></li>
+                    <li>Organisationsfähigkeit: <sub>* * </sub></li>
+                </ul>
+        </div>
+        <div class="card center">
+            <div class=" card center-right">
+                    <h3><img src="images/school.png" alt="Schulische Bildung"><sup> Schulische Bildung</sup></h3>
+                    <ul>
+                        <li>1996 - 2000 * Grundschule * abgeschlossen</li>
+                        <li>2000 - 2006 * Realschule * Mittlere Reife</li>
+                        <li>2006 - 2010 * Ausbildung * Gesellenbrief</li>
+                    </ul>
+            </div>
+            <div class="card center-left">
+                <h3><img src="images/work.png" alt="Beruflicher Werdegang"><sup> Beruflicher Werdegang</sup></h3>
+                <ul>
+                    <li>2010 - 2011 * Gesellenjahr * Elektrotechnik Lohf</li>
+                    <li>2011 - 2022 * Soldat * Bundeswehr</li>
+                        <ul>
+                            <li>2012 * Umschulung * IT-Systemelektroniker</li>
+                            <li>2012 * Zusatzqualifikation * IT-Specialist Bereich Netzwerkadministration</li>
+                            <li>2017 - 2019 * Aufstiegsqualifikation * geprüfter IT-Projektleiter 
+                                <a href="https://www.ihk.de/berlin">
+                                    <img src="images/ihk.svg" alt="IHK-Logo" id="ihk">
+                                </a>
+                            </li>
+                        </ul>
+                    <li>2022 - heute * Studium (Angewandte Informatik) * Hochschule Flensburg</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card right">
+            <h3><img src="/images/hobby.png" alt="Hobbys"><sup> Hobbys</sup></h3>
+            <ul>
+                <li>Darts (aktiv und passiv)</li>
+                <li>ehrenamtliche Tätigkeit (2. Vorstitzender und IT-Admin)</li>
+                <li>Fußball (nur noch passiv)</li>
+                <li>American Football (nur noch passiv)</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>
+              &copy; 2022 malnDesign
+              by Albert M., Maik B., Laura w., Nils B.
+        </p>
+     </footer>
+</body>
+</html>
