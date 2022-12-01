@@ -10,7 +10,6 @@ html {
     font-family: 'JetBrains Mono', monospace;
     scroll-behavior: smooth;
     background-color: #faebe8;
-    width: 100vw;
 }
 
 /* =============================================================================== */
@@ -170,6 +169,7 @@ html {
     height: 100%;
     /* Ecken abrunden */
     border-radius: 1rem;
+    border: #07689F 5px solid;
 }
 
 .card > div > p {
