@@ -120,6 +120,8 @@ html {
     text-decoration: none;
     /* Höhe auf 90% des Screens */
     height: 90vh;
+    /* Breite auf 70% */
+    
 }
 
 .card {
@@ -139,6 +141,8 @@ html {
     text-decoration: none;
     /* Textfarbe schwarz */
     color: black;
+    /* Abstand auf 10rem */
+    gap: 10rem;
 }
 
 .card:hover {
